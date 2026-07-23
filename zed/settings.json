@@ -12,8 +12,8 @@
   },
   "icon_theme": {
     "mode": "system",
-    "light": "Catppuccin Icons",
-    "dark": "Catppuccin Icons",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
   },
 
   // ---------- Fonts ----------
@@ -21,7 +21,7 @@
   // Fallbacks kick in automatically if a font isn't installed.
   // ".ZedMono" is the bundled font, so the chain always resolves.
   "buffer_font_family": "Geist Mono",
-  "buffer_font_fallbacks": ["JetBrains Mono", "Maple Mono", ".ZedMono"],
+  "buffer_font_fallbacks": ["JetBrainsMono NF", ".ZedMono"],
   "ui_font_family": "Geist",
   "ui_font_fallbacks": [".SystemUIFont", ".ZedSans"],
 
