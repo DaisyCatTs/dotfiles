@@ -33,8 +33,13 @@
   "hard_tabs": false,
   "soft_wrap": "editor_width",
   "preferred_line_length": 100,
-  "show_wrap_guides": true,
-  "wrap_guides": [80, 100],
+  "show_wrap_guides": false,
+
+  "centered_layout": {
+    "left_padding": 0.2,
+    "right_padding": 0.2,
+  },
+
   "cursor_blink": false,
   "scroll_beyond_last_line": "one_page",
   "relative_line_numbers": "disabled",
@@ -46,7 +51,7 @@
   "ensure_final_newline_on_save": true,
   "line_ending": "prefer_lf",
 
-  "go_to_definition_scroll_strategy": "preserve",
+  "go_to_definition_scroll_strategy": "center",
   "code_lens": "on",
 
   "indent_guides": {
@@ -184,6 +189,12 @@
       },
     },
 
+    "JSX": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "colorize_brackets": true,
+    },
+
     "HTML": {
       "tab_size": 2,
       "format_on_save": "on",
@@ -191,6 +202,12 @@
     },
 
     "CSS": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "colorize_brackets": true,
+    },
+
+    "SCSS": {
       "tab_size": 2,
       "format_on_save": "on",
       "colorize_brackets": true,
