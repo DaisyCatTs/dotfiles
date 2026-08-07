@@ -17,10 +17,12 @@
   "buffer_font_fallbacks": ["JetBrains Mono", ".ZedMono"],
   "buffer_font_size": 16,
   "buffer_font_weight": 400,
+
   "buffer_font_features": {
     "calt": true,
     "liga": true,
   },
+
   "buffer_line_height": {
     "custom": 1.55,
   },
@@ -31,6 +33,7 @@
 
   "tab_size": 2,
   "hard_tabs": false,
+
   "soft_wrap": "editor_width",
   "preferred_line_length": 100,
   "show_wrap_guides": false,
@@ -40,18 +43,24 @@
     "right_padding": 0.2,
   },
 
-  "cursor_blink": false,
+  "cursor_blink": true,
+  "cursor_shape": "bar",
+
   "scroll_beyond_last_line": "one_page",
-  "relative_line_numbers": "disabled",
-  "show_whitespaces": "selection",
+
+  "show_whitespaces": "boundary",
 
   "autosave": "on_focus_change",
+
   "format_on_save": "modifications_if_available",
+
   "remove_trailing_whitespace_on_save": true,
   "ensure_final_newline_on_save": true,
+
   "line_ending": "prefer_lf",
 
   "go_to_definition_scroll_strategy": "center",
+
   "code_lens": "on",
 
   "indent_guides": {
@@ -76,9 +85,9 @@
     "provider": "zed",
     "mode": "eager",
   },
-
   "git": {
     "git_gutter": "tracked_files",
+
     "inline_blame": {
       "enabled": true,
       "delay_ms": 600,
@@ -89,19 +98,25 @@
     "enabled": true,
     "button": true,
     "dock": "right",
-    "default_width": 640,
+    "default_width": 720,
   },
 
   "project_panel": {
     "button": true,
     "dock": "left",
+
     "git_status": true,
+
     "file_icons": true,
     "folder_icons": true,
+
     "auto_fold_dirs": true,
     "auto_reveal_entries": true,
+
     "indent_size": 20,
+
     "bold_folder_labels": true,
+
     "indent_guides": {
       "show": "always",
     },
@@ -110,9 +125,12 @@
   "outline_panel": {
     "button": true,
     "dock": "right",
+
     "file_icons": true,
     "folder_icons": true,
+
     "git_status": true,
+
     "indent_size": 20,
   },
 
@@ -129,10 +147,15 @@
 
   "terminal": {
     "font_family": "Geist Mono",
+
     "font_fallbacks": ["JetBrains Mono", ".ZedMono"],
+
     "font_size": 15,
+
     "line_height": "comfortable",
+
     "blinking": "off",
+
     "working_directory": "current_project_directory",
   },
 
@@ -140,29 +163,93 @@
     "**/.git",
     "**/.svn",
     "**/.hg",
+
     "**/.DS_Store",
     "**/Thumbs.db",
+
     "**/node_modules",
+
     "**/.venv",
     "**/venv",
     "**/__pycache__",
+
+    "**/.gradle",
+
     "**/target",
     "**/build",
+    "**/out",
+
     "**/dist",
     "**/.next",
     "**/.cache",
     "**/coverage",
-    "**/.gradle",
-    "**/out",
-    "**/.idea",
-  ],
 
+    "**/.idea",
+
+    "**/.terraform",
+    "**/.vscode",
+  ],
   "languages": {
+    "Skript": {
+      "tab_size": 4,
+      "hard_tabs": true,
+
+      "semantic_tokens": "combined",
+
+      "format_on_save": "on",
+
+      "colorize_brackets": true,
+
+      "document_symbols": "on",
+    },
+
+    "Kotlin": {
+      "tab_size": 4,
+      "hard_tabs": false,
+
+      "format_on_save": "on",
+
+      "colorize_brackets": true,
+
+      "document_symbols": "on",
+    },
+
+    "Java": {
+      "tab_size": 4,
+      "hard_tabs": false,
+
+      "format_on_save": "on",
+
+      "colorize_brackets": true,
+
+      "document_symbols": "on",
+    },
+
+    "Gradle": {
+      "tab_size": 4,
+
+      "format_on_save": "on",
+
+      "colorize_brackets": true,
+    },
+
+    "Groovy": {
+      "tab_size": 4,
+
+      "format_on_save": "on",
+
+      "colorize_brackets": true,
+    },
+
     "TypeScript": {
       "tab_size": 2,
+
       "format_on_save": "on",
+
       "colorize_brackets": true,
+
       "document_symbols": "on",
+
       "code_actions_on_format": {
         "source.organizeImports": true,
         "source.fixAll.eslint": true,
@@ -171,9 +258,13 @@
 
     "TSX": {
       "tab_size": 2,
+
       "format_on_save": "on",
+
       "colorize_brackets": true,
+
       "document_symbols": "on",
+
       "code_actions_on_format": {
         "source.organizeImports": true,
         "source.fixAll.eslint": true,
@@ -182,126 +273,128 @@
 
     "JavaScript": {
       "tab_size": 2,
+
       "format_on_save": "on",
+
       "colorize_brackets": true,
+
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
     },
 
-    "JSX": {
-      "tab_size": 2,
-      "format_on_save": "on",
-      "colorize_brackets": true,
-    },
-
     "HTML": {
       "tab_size": 2,
+
       "format_on_save": "on",
+
       "colorize_brackets": true,
     },
 
     "CSS": {
       "tab_size": 2,
-      "format_on_save": "on",
-      "colorize_brackets": true,
-    },
 
-    "SCSS": {
-      "tab_size": 2,
       "format_on_save": "on",
-      "colorize_brackets": true,
-    },
 
-    "Kotlin": {
-      "tab_size": 4,
-      "format_on_save": "on",
       "colorize_brackets": true,
-      "document_symbols": "on",
-    },
-
-    "Java": {
-      "tab_size": 4,
-      "format_on_save": "on",
-      "colorize_brackets": true,
-      "document_symbols": "on",
-    },
-
-    "CSharp": {
-      "tab_size": 4,
-      "format_on_save": "on",
-      "colorize_brackets": true,
-      "document_symbols": "on",
-    },
-
-    "Lua": {
-      "tab_size": 2,
-      "format_on_save": "on",
-      "colorize_brackets": true,
-      "document_symbols": "on",
-    },
-
-    "YAML": {
-      "tab_size": 2,
-      "format_on_save": "on",
-      "colorize_brackets": true,
-      "document_symbols": "on",
     },
 
     "JSON": {
       "tab_size": 2,
+
       "format_on_save": "on",
+
       "colorize_brackets": true,
     },
 
     "JSONC": {
       "tab_size": 2,
+
       "format_on_save": "on",
+
       "colorize_brackets": true,
+    },
+
+    "YAML": {
+      "tab_size": 2,
+
+      "format_on_save": "on",
+
+      "colorize_brackets": true,
+
+      "document_symbols": "on",
     },
 
     "TOML": {
       "tab_size": 2,
+
       "format_on_save": "on",
     },
 
     "Properties": {
       "tab_size": 2,
+
       "format_on_save": "on",
     },
 
     "XML": {
       "tab_size": 2,
+
       "format_on_save": "on",
+
       "colorize_brackets": true,
+    },
+
+    "Lua": {
+      "tab_size": 2,
+
+      "format_on_save": "on",
+
+      "colorize_brackets": true,
+
+      "document_symbols": "on",
     },
 
     "Markdown": {
       "tab_size": 2,
+
       "soft_wrap": "editor_width",
+
       "format_on_save": "off",
     },
 
     "Shell Script": {
       "tab_size": 2,
+
       "format_on_save": "on",
     },
 
     "Dockerfile": {
       "tab_size": 2,
+
       "format_on_save": "on",
     },
   },
-
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
         "tailwindCSS": {
           "emmetCompletions": true,
         },
+
         "classFunctions": ["cva", "cx", "clsx", "tw", "cn"],
       },
     },
+
+    "skript-lsp": {
+      "initialization_options": {
+        "addons": "auto",
+      },
+    },
+  },
+
+  "diagnostics": {
+    "include_warnings": true,
   },
 
   "telemetry": {
