@@ -50,7 +50,11 @@
 
   "show_whitespaces": "boundary",
 
-  "autosave": "on_focus_change",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
 
   "format_on_save": "modifications_if_available",
 
@@ -60,8 +64,6 @@
   "line_ending": "prefer_lf",
 
   "go_to_definition_scroll_strategy": "center",
-
-  "code_lens": "on",
 
   "indent_guides": {
     "enabled": true,
@@ -79,12 +81,20 @@
     "show_type_hints": true,
     "show_parameter_hints": true,
     "show_other_hints": true,
+    "show_background": false,
   },
 
   "edit_predictions": {
     "provider": "zed",
     "mode": "eager",
   },
+
+  "gutter": {
+    "min_line_number_digits": 4,
+    "line_numbers": true,
+    "runnables": true,
+  },
+
   "git": {
     "git_gutter": "tracked_files",
 
@@ -92,6 +102,21 @@
       "enabled": true,
       "delay_ms": 600,
     },
+
+    "enable_status": true,
+    "enable_diff": true,
+  },
+
+  "diagnostics": {
+    "include_warnings": true,
+
+    "inline": {
+      "enabled": true,
+    },
+  },
+
+  "tasks": {
+    "prefer_lsp": true,
   },
 
   "agent": {
@@ -158,7 +183,6 @@
 
     "working_directory": "current_project_directory",
   },
-
   "file_scan_exclusions": [
     "**/.git",
     "**/.svn",
@@ -185,10 +209,23 @@
     "**/coverage",
 
     "**/.idea",
+    "**/.vscode",
 
     "**/.terraform",
-    "**/.vscode",
   ],
+
+  "formatter": [
+    {
+      "code_action": "source.fixAll.eslint",
+    },
+    {
+      "external": {
+        "command": "prettier",
+        "arguments": ["--stdin-filepath", "{buffer_path}"],
+      },
+    },
+  ],
+
   "languages": {
     "Skript": {
       "tab_size": 4,
@@ -252,6 +289,7 @@
 
       "code_actions_on_format": {
         "source.organizeImports": true,
+        "source.addMissingImports.ts": true,
         "source.fixAll.eslint": true,
       },
     },
@@ -267,6 +305,7 @@
 
       "code_actions_on_format": {
         "source.organizeImports": true,
+        "source.addMissingImports.ts": true,
         "source.fixAll.eslint": true,
       },
     },
@@ -375,6 +414,7 @@
       "format_on_save": "on",
     },
   },
+
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
@@ -391,10 +431,6 @@
         "addons": "auto",
       },
     },
-  },
-
-  "diagnostics": {
-    "include_warnings": true,
   },
 
   "telemetry": {
