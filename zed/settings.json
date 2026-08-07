@@ -233,6 +233,10 @@
 
       "semantic_tokens": "combined",
 
+      // Without this, the global "formatter" above applies: its last step is
+      // external prettier, which has never heard of .sk, so saving fails and
+      // skript-lsp is never asked to format.
+      "formatter": "language_server",
       "format_on_save": "on",
 
       "colorize_brackets": true,
